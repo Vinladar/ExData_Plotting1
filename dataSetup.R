@@ -19,6 +19,11 @@ dataSetup <- function() {
 
 	# Reformats the date and time and stores it in the Date column
 	data$Date <- strptime(data$dateTime, format("%Y-%m-%d %H:%M:%S"))
+	
+	# Set the Sub metering variables into numeric types
+	data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
+	data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
+	data$Sub_metering_3 <- as.numeric(as.character(data$Sub_metering_3))
 
 	data
 }
