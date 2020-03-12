@@ -9,7 +9,7 @@ dataSetup <- function() {
 	data <- read.table("../household_power_consumption.txt", header = TRUE, sep = ";")
 
 	# filters the rows to only include the two days
-	data <- filter(data, Date == "2/2/2007" | Date == "2/1/2007")
+	data <- filter(data, Date == "1/2/2007" | Date == "2/2/2007")
 
 	# Reformats the date
 	data$Date <- dmy(data$Date)
