@@ -24,6 +24,7 @@ dataSetup <- function() {
 	data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
 	data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
 	data$Sub_metering_3 <- as.numeric(as.character(data$Sub_metering_3))
+	data$Voltage <- as.numeric(as.character(data$Voltage))
 
 	data
 }
